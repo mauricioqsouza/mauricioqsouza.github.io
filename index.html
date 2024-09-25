@@ -1,65 +1,682 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-<head>
+<html lang="en">
+
+  <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Portfólio de Maurício Souza, Desenvolvedor e Analista de Dados">
-    <title>Maurício Souza - Desenvolvedor e Analista de Dados</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <title>Portfólio - Maurício Souza</title>
 
-    <!-- Navbar -->
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#projetos">Projetos</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
+    <!--
+      - favicon
+    -->
+    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+    <!--
+      - custom css link
+    -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!--
+      - google font link
+    -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <!--
+      - #MAIN
+    -->
+
+    <main>
+
+      <!--
+        - #SIDEBAR
+      -->
+
+      <aside class="sidebar" data-sidebar>
+
+        <div class="sidebar-info">
+
+          <figure class="avatar-box">
+            <img src="./assets/images/foto_ms.jpeg" alt="Maurício Souza" width="80">
+          </figure>
+
+          <div class="info-content">
+            <h1 class="name" title="Maurício Souza">Maurício Souza</h1>
+
+            <p class="title">Analista de Dados | BI</p>
+          </div>
+
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+
+        </div>
+
+        <div class="sidebar-info_more">
+
+          <div class="separator"></div>
+
+          <ul class="contacts-list">
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">E-mail</p>
+
+                <a href="mailto:mauricioq.souza@gmail.com" class="contact-link">mauricioq.souza@gmail.com</a>
+              </div>
+
+            </li>
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">WhatsApp</p>
+
+                <a href="https://wa.me/+5575992310327" class="contact-link">CLIQUE AQUI!</a>
+              </div>
+
+            </li>
+
+
+            <li class="contact-item">
+
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+
+              <div class="contact-info">
+                <p class="contact-title">Localização</p>
+
+                <address>Feira de Santana/BA - BR</address>
+              </div>
+
+            </li>
+
+          </ul>
+
+          <div class="separator"></div>
+
+          <ul class="social-list">
+
+            <li class="social-item">
+              <a href="https://www.linkedin.com/in/mauricioqsouza/" class="social-link">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </aside>
+
+
+
+
+
+      <!--
+        - #main-content
+      -->
+
+      <div class="main-content">
+
+        <!--
+          - #NAVBAR
+        -->
+
+        <nav class="navbar">
+
+          <ul class="navbar-list">
+
+            <li class="navbar-item">
+              <button class="navbar-link  active" data-nav-link>About</button>
+            </li>
+
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+
+          </ul>
+
         </nav>
-    </header>
 
-    <!-- Seção: Apresentação -->
-    <section id="home" class="hero-section">
-        <h1>Olá, eu sou <span>Maurício Souza</span></h1>
-        <p>Desenvolvedor e Analista de Dados focado em criar soluções eficazes e automatizadas.</p>
-        <a href="#projetos" class="btn">Veja meus Projetos</a>
-    </section>
 
-    <!-- Seção: Sobre Mim -->
-    <section id="sobre" class="sobre-section">
-        <h2>Sobre Mim</h2>
-        <p>Sou um profissional com 13 anos de experiência em análise de dados e desenvolvimento de soluções para automação de processos, visualização de dados e criação de relatórios estratégicos.</p>
-        <a href="https://www.linkedin.com/in/mauricioqsouza/" class="btn">LinkedIn</a>
-    </section>
 
-    <!-- Seção: Projetos -->
-    <section id="projetos" class="projetos-section">
-        <h2>Meus Projetos</h2>
-        <div class="projeto-card">
-            <h3>Projeto 1</h3>
-            <p>Descrição breve do projeto 1. Ferramentas usadas: Python, BigQuery, Looker.</p>
-            <a href="https://github.com/mauricioqsouza" class="btn">Ver no GitHub</a>
-        </div>
-        <div class="projeto-card">
-            <h3>Projeto 2</h3>
-            <p>Descrição breve do projeto 2. Ferramentas usadas: Power BI, MySQL.</p>
-            <a href="https://github.com/mauricioqsouza" class="btn">Ver no GitHub</a>
-        </div>
-    </section>
 
-    <!-- Seção: Contato -->
-    <section id="contato" class="contato-section">
-        <h2>Contato</h2>
-        <p>Você pode me contatar diretamente pelo e-mail <strong>seu-email@email.com</strong> ou via LinkedIn.</p>
-        <a href="https://www.linkedin.com/in/mauricioqsouza/" class="btn">LinkedIn</a>
-    </section>
 
-    <!-- Rodapé -->
-    <footer>
-        <p>&copy; 2024 Maurício Souza</p>
-    </footer>
+        <!--
+          - #ABOUT
+        -->
 
-</body>
+        <article class="about  active" data-page="about">
+
+          <header>
+            <h2 class="h2 article-title">Sobre mim</h2>
+          </header>
+
+          <section class="about-text">
+            <p>
+              Profissional com sólida experiência em análise de dados, automação de dashboards e relatórios gerenciais, incluindo relatórios financeiros como DRE, margem de contribuição e análises por centro de custo.
+
+            </p>
+
+            <p>
+              Expertise em ETL com Python, Data Wrangling e consumo de dados em bancos relacionais e NoSQL, utilizando bibliotecas requests e pymongo. Domínio de ferramentas de Business Intelligence (BI) como Power BI, Looker Studio, SQL (PostgreSQL e MySQL), BigQuery, e experiência com Cloud Computing, principalmente em Google Cloud.
+            </p>
+          </section>
+
+
+          <!--
+            - service
+          -->
+
+          <section class="service">
+
+            <h3 class="h3 service-title">Portfólio</h3>
+
+            <ul class="service-list">
+              <a href="https://github.com/mauricioqsouza" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/looker_studio.png" alt="design icon" width="50">
+                    <br>
+                    <img src="./assets/images/python.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gcp.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gsheets.png" alt="design icon" width="50">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Dashboard automatizado com tratamento em Python</h4>
+
+                    <p class="service-item-text">
+                      Projeto com raspagem de dados em Python e envio para o GCP.
+                    </p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="https://github.com/mauricioqsouza" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/looker_studio.png" alt="design icon" width="50">
+                    <br>
+                    <img src="./assets/images/python.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gcp.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gsheets.png" alt="design icon" width="50">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Dashboard automatizado com tratamento em Python</h4>
+
+                    <p class="service-item-text">
+                      Projeto com raspagem de dados em Python e envio para o GCP.
+                    </p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="https://github.com/mauricioqsouza/caged" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/powerbi.png" alt="design icon" width="50">
+                    <br>
+                    <img src="./assets/images/python.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/excel.webp" alt="design icon" width="60">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Dashboard com milhões de linhas - CAGED</h4>
+
+                    <p class="service-item-text">
+                      Projeto com tratamento dos dados em DAX e M. A Junção dos inúmeros arquivos foi em Python.
+                      <img src="./assets/images/caged.jpg" alt="design icon" width="250">
+                    </p>
+                  </div>
+                </li>
+              </a>
+
+              <a href="https://github.com/mauricioqsouza/python_sheets_looker" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: inherit;">
+                <li class="service-item">
+
+                  <div class="service-icon-box">
+                    <img src="./assets/images/looker_studio.png" alt="design icon" width="50">
+                    <br>
+                    <img src="./assets/images/python.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gcp.png" alt="design icon" width="40">
+                    <br>
+                    <img src="./assets/images/gsheets.png" alt="design icon" width="50">
+                  </div>
+
+                  <div class="service-content-box">
+                    <h4 class="h4 service-item-title">Dashboard automatizado com tratamento em Python</h4>
+
+                    <p class="service-item-text">
+                      Projeto com raspagem de dados em Python e envio para o GCP.
+                      <img src="./assets/images/dash1.jpg" alt="design icon" width="250">
+                    </p>
+                  </div>
+                </li>
+              </a>
+
+            </ul>
+
+          </section>
+
+
+
+          <!--
+            - testimonials modal
+          -->
+
+          <div class="modal-container" data-modal-container>
+
+            <div class="overlay" data-overlay></div>
+
+            <section class="testimonials-modal">
+
+              <button class="modal-close-btn" data-modal-close-btn>
+                <ion-icon name="close-outline"></ion-icon>
+              </button>
+
+            </section>
+
+          </div>
+
+
+          <!--
+            - clients
+          -->
+
+          <section class="clients">
+
+            <h3 class="h3 clients-title">Ferramentas</h3>
+
+            <ul class="clients-list has-scrollbar">
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original-wordmark.svg"/>
+                  <br>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"/>
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original-wordmark.svg"/>
+                  <br>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original-wordmark.svg"/>
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/pandas.png">
+                  <br>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jupyter/jupyter-original-wordmark.svg"/>
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/bigquery.webp">
+                  <br>
+                  <img src="./assets/images/gcp.png">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/looker_studio.png">
+                  <br>
+                  <img src="./assets/images/powerbi.png">
+                </a>
+              </li>
+
+              <li class="clients-item">
+                <a href="#">
+                  <img src="./assets/images/postgress.png">
+                  <br>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg"/>
+                </a>
+              </li>
+
+            </ul>
+
+          </section>
+
+        </article>
+
+
+
+        <!--
+          - #RESUME
+        -->
+
+        <article class="resume" data-page="resume">
+
+          <header>
+            <h2 class="h2 article-title">Currículo</h2>
+          </header>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Formação</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Unopar</h4>
+
+                <span>2006 — 2009</span>
+
+                <p class="timeline-text">
+                  Processos Gerenciais
+                </p>
+
+              </li>
+
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">FTC</h4>
+
+                <span>2009 — 2011</span>
+
+                <p class="timeline-text">
+                  Controladoria e Finanças
+                </p>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <section class="timeline">
+
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+
+              <h3 class="h3">Experiência</h3>
+            </div>
+
+            <ol class="timeline-list">
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Analista de Dados</h4>
+
+                <span>09/2022 — 08/2024</span>
+
+                <p class="timeline-text">
+                  Responsável pela criação, análise e automatização de dashboards e relatórios gerenciais nas áreas de Customer Success (CS) e Financeiro, utilizando ferramentas como Power BI, Looker Studio, BigQuery, MySQL e Excel avançado.
+                  <br>
+                  Principais Realizações:
+                  <br>
+                  Criação e manutenção de relatórios de produtividade no CS, utilizando ETL no BigQuery e Visualização de dados no Looker, o que resultou na melhoria do canal e na redução dos tickets por voucher. Além de criar relatórios de acompanhamento de KPI's e OKR's.
+                  <br>
+                  Desenvolvimento e gestão de informações estratégicas que ajudaram a reduzir os SLA’s por equipe, produto e tipo de atendimento, automatizando processos com Looker Studio e BigQuery.
+                  <br>
+                  Elaboração de dashboards automatizados que suportaram a entrega de dados financeiros e gerenciais, otimizando as operações com o ETL em Excel, Power BI (Power Query), MySQL e BigQuery (GCP).
+                  <br>
+                  Desenvolvimento de relatórios de conciliação que reduziram gaps e atrasos nos fechamentos e melhoraram a conferência de faturas, otimizando a coleta e análise de dados financeiros.
+                  <br>
+                  Criação e análise de cohort de contas a receber, cohort de liquidez, curva ABC e relatórios de margem de contribuição, Gross, Fee, receita e produtividade utilizados em apresentações gerenciais e para o Conselho, empregando ferramentas como Power BI e Excel, Looker Studio e Apresentações.
+                  <br>
+                  Melhoria na performance e eficiência dos processos de atualização de dados através da utilização de BigQuery. Criando views performáticas e querys elaboradas que continham dados oriundos do CRM, do Hubspot, do Zendesk e de acompanhamentos em planilhas.
+                  <br>
+                  Utilizei Python para ETL de grande volume de dados oriundos do CRM.
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Analista de Dados - Clivi (México)</h4>
+
+                <span>11/2021 — 08/2022</span>
+
+                <p class="timeline-text">
+                  Elaborei Budgets B2B e B2C, análises de KPI's, planos de comissionamento, projeções de resultados e apresentações estratégicas e táticas para C-Level e investidores, com foco em Budget, Forecast e acompanhamento de fechamentos financeiros.
+                  <br>
+                  Criei e mantive fluxos de SDR, vendas e PX no B2B e, no B2C, desenvolvi a estrutura analítica e dei suporte ao Sales Operations, além de redesenhar fluxos de processos e reestruturar canais de vendas e atendimento. A atuação permitiu maior precisão nas análises e melhorias significativas nos resultados.
+                  <br>
+                  Automatizei relatórios complexos por meio de integrações com APIs, incluindo o HubSpot, utilizando Google Functions para automação de processos de ETL em Python e BigQuery, garantindo escalabilidade e precisão. Desenvolvi dashboards em Looker para dar visibilidade a vendas, retenção e gestão de equipes de PX, otimizando o acompanhamento de KPI's e OKR's.
+                  <br>
+                  Fui responsável pela otimização do workflow de vendas e gestão de leads, proporcionando previsibilidade no fechamento de negócios e uma gestão mais eficiente das carteiras de clientes.
+                  <br>
+                  Criei e mantive estruturas analíticas avançadas que suportaram decisões estratégicas e operacionais, implementando dashboards customizados em Looker para acompanhamento de performance e retenção de clientes, além de manter o Budget e o Cohort de Onboarding de PX.
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Analista de Dados / Gerente de TI</h4>
+
+                <span>02/2021 — 11/2021</span>
+
+                <p class="timeline-text">
+                  Atuei na elaboração de relatórios automatizados via API’s REST e GraphQL, além do processo de ETL em
+                  Python.
+                  <br>
+                  Elaborei relatórios de fluxos automáticos e ininterruptos, garantindo precisão e escalabilidade. Era responsável pelo Workflow do funil de vendas e, também, do processo de leads, deadline e previsibilidade de faturamento (MRR).
+                  <br>
+                  Elaborei análises de KPI's, Budgets KPI's, planos de comissionamento, projeções de resultados e, além dos relatórios, apresentações estratégicas e táticas para Budget, Forecast, fechamento e acompanhamento dos C - Level.
+                  <br>
+                  Criei, acompanhei e dei mentoria sobre os relatórios de alocação e dedicação da área de
+                  desenvolvimento. Criei um fluxo automatizado do Monday, usando a obtenção de dados via API de bibliotecas do Python e gerava um Dashboard em tempo real com a alocação e/ou dedicação por projeto,
+                  atendendo, inclusive, itens de auditoria.
+                  <br>
+                  Responsável pela automação de processos, gestão de Big Data e criação de Dashboards
+                  para garantir velocidade, fluidez e precisão para a tomada de decisão. Além, da responsabilidade
+                  de garantir Melhoria nos processos das áreas de apoio e, também, gerar KPI’s e formas de gerir
+                  cada indicador com o intuito de facilitar a tomada de decisão e, conformidade nos processos de
+                  qualidade e auditorias de P & D.
+                  <br>
+                  Conduzi o Processo de renovação da Certificação ISO 9001, além da Reestruturação da TI.
+                  Garantindo maior escalabilidade, segurança e disponibilidade.
+                  <br>
+                  ETL em python, ETL em SQL Server, ETL em Power Query e visualização de dados em looker e Google Sheets / Excel, além da estruturação de dados, usos e gestão de VM's e versionamento através de ferramentas GIT.
+                </p>
+
+              </li>
+
+              <li class="timeline-item">
+
+                <h4 class="h4 timeline-item-title">Analista de Dados - Doctoralia</h4>
+
+                <span>11/2018 — 11/2020</span>
+
+                <p class="timeline-text">
+                  Atuava na elaboração, acompanhamento e atualização de relatórios de análise e resultados com visualização em Looker e Tableau. Garantindo precisão, fluxo ininterrupto e cobertura de todos os indicadores Globais e operacionais com ETL em MySQL, Python e Excel.
+                  <br>
+                  Elaborei análises de KPI's, Budgets KPI's, planos de comissionamento, projeções de
+                  resultados e, além dos relatórios, apresentações estratégicas e táticas para Budget, planejamento,
+                  fechamento e acompanhamento dos CEO's, CFO's, COO's e investidores.
+                  <br>
+                  Responsável pelo conteúdo estratégico de resultados para as Staffs. Acompanhava e
+                  realizava o fechamento dos resultados e era responsável pelas atualizações para o time Global.
+                  <br>
+                  Responsável pelos relatórios de performance que faziam parte do plano de carreira.
+                  <br>
+                  Elaborava relatórios de análise de Players e Cohort, além de análises detalhadas de turnover e performance por tempo de casa. LTV e curva por clientes/Produtos, além de Gross, MRR, ARR, Churn, Net e Share.
+                </p>
+
+              </li>
+
+            </ol>
+
+          </section>
+
+          <section class="skill">
+
+            <h3 class="h3 skills-title">Skills</h3>
+
+            <ul class="skills-list content-card">
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">ETL</h5>
+                  <data value="100">100%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Python</h5>
+                  <data value="80">80%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 80%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">SQL</h5>
+                  <data value="90">90%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 90%;"></div>
+                </div>
+
+              </li>
+
+              <li class="skills-item">
+
+                <div class="title-wrapper">
+                  <h5 class="h5">Dashboards</h5>
+                  <data value="100">100%</data>
+                </div>
+
+                <div class="skill-progress-bg">
+                  <div class="skill-progress-fill" style="width: 100%;"></div>
+                </div>
+
+              </li>
+
+            </ul>
+
+          </section>
+
+        </article>
+
+
+
+        <!--
+          - #PORTFOLIO
+        -->
+
+        <article class="portfolio" data-page="portfolio">
+
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+
+          <section class="projects">
+
+            <ul class="filter-list">
+
+              <li class="filter-item">
+                <button class="active" data-filter-btn>All</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web design</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Applications</button>
+              </li>
+
+              <li class="filter-item">
+                <button data-filter-btn>Web development</button>
+              </li>
+
+            </ul>
+
+            <div class="filter-select-box">
+
+              <button class="filter-select" data-select>
+
+                <div class="select-value" data-selecct-value>Select category</div>
+
+                <div class="select-icon">
+                  <ion-icon name="chevron-down"></ion-icon>
+                </div>
+
+              </button>
+
+            </div>
+
+          </section>
+
+        </article>
+
+
+
+
+
+
+
+    <!--
+      - custom js link
+    -->
+    <script src="./assets/js/script.js"></script>
+
+    <!--
+      - ionicon link
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  </body>
+
 </html>
