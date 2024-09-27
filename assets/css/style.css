@@ -60,7 +60,7 @@
   --onyx: hsl(240, 1%, 17%);
   --eerie-black-1: hsl(240, 2%, 13%);
   --eerie-black-2: hsl(240, 2%, 12%);
-  --verde_escuro: hsl(127, 93%, 5%);
+  --verde_escuro: hsl(128, 100%, 2%);
   --white-1: hsl(0, 0%, 100%);
   --white-2: hsl(0, 0%, 98%);
   --verde_padrao: hsl(131, 62%, 35%);
@@ -749,7 +749,8 @@ main {
 }
 
 .clients-item img {
-  width: 100%;
+  height: 50px;
+  width: auto;
   filter: grayscale(0);
   transition: var(--transition-1);
 }
